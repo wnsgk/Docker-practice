@@ -1,0 +1,20 @@
+spring:
+  config:
+    activate:
+      on-profile: docker
+  datasource:
+    url: jdbc:mysql://mysql:3306/dockertest?useSSL=false&useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true&autoReconnection=true&serverTimezone=Asia/Seoul
+    username: root
+    password: wnsgk123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+  redis:
+    host: redis
+    port: 6379
