@@ -4,7 +4,7 @@ services:
     image: mysql
     environment:
       MYSQL_DATABASE: dockertest
-      MYSQL_ROOT_PASSWORD: wnsgk123
+      MYSQL_ROOT_PASSWORD: w
       MYSQL_ROOT_HOST: '%'
       TZ: Asia/Seoul
     ports:
